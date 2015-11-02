@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Garant Mexicana</title>
+
+    <!-- SETTINGS -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+
+		 <!-- STYLES -->
+		<link href="css/include/reset.css" rel="stylesheet" />
+		<link href="css/include/grid.css" rel="stylesheet" />
+		<link href="css/include/awesome.css" rel="stylesheet" />
+		<link href="css/include/animations.css" rel="stylesheet" />
+		<link href="css/libs/revolution.css" rel="stylesheet" />
+		<link href="css/libs/bslider.css" rel="stylesheet" />
+		<link href="css/libs/fancybox.css" rel="stylesheet" />
+		<link href="css/main.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
+
+		<!-- SCRIPTS -->
+    <script src="js/include/jquery.js"></script>
+		<script src="js/include/respond.js"></script>
+		<script src="js/include/retina.js"></script>
+		<script src="js/include/jquery-ui.js"></script>
+		<script src="js/include/jquery.mobile.js"></script>
+		<script src="js/include/browser.js"></script>
+		<script src="js/include/scale.js"></script>
+		<script src="js/include/quicksand.js"></script>
+		<script src="js/libs/plugins.js"></script>
+		<script src="js/libs/revolution.js"></script>
+		<script src="js/libs/bxslider.js"></script>
+		<script src="js/libs/fancybox.js"></script>
+		<script src="js/main.js"></script>
+  </head>
+  <body data-page="contact" data-boxed="false">
+
+        <!-- LAYOUT -->
+        <div id="layout">
+
+          <!-- HEADER -->
+          <div id="header">
+            <div class="container">
+              <div class="wrapper">
+                <!-- LOGO -->
+                <div id="logo">
+                  <a href="index.html">
+                    <img src="img/logo.jpg" alt="" height="75" />
+                    <!-- <span><b>Dexen</b> Energy</span> -->
+                  </a>
+                </div>
+                <!-- MAIN MENU -->
+                <ul id="menu" class="full">
+                  <li class="submenu">
+                    <a>Menu</a>
+                    <ul>
+                      <li><a href="index.html">Inicio</a></li>
+                      <li class="submenu">
+                        <a>Productos y Servicios</a>
+                        <ul>
+                          <li><a href="conectores.html">Conectores</a></li>
+                          <li><a href="habilitado.html">Habilitado</a></li>
+                          <li><a href="toron.html">Toron de Presfuerzo</a></li>
+                          <li><a href="vigueta.html">Vigueta y Bovedilla</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="proyectos.html">Proyectos</a></li>
+                      <li><a href="about.html">Nosotros</a></li>
+                      <li class="current-menu-item"><a href="contact.html">Contacto</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- PREFACE -->
+          <div id="preface">
+            <div class="container">
+              <h2>Contacto</h2>
+              <p>
+                Nos interesa conocer tu opinion.
+              </p>
+            </div>
+          </div>
+
+          <!-- MAP -->
+          <div class="ui_map ui_preloader" data-ui_map_latitude="25.6648158" data-ui_map_longtitude="-100.4391489" data-ui_map_zoom="16"></div>
+
+            <!-- CONTACT -->
+
+            <div id="contact">
+                <div class="container grid">
+                    <div class="row">
+                        <div class="col-5-12">
+
+                          <!-- ADDRESS -->
+                          <h5>DIRECCIÓN</h5>
+                          <p>
+                            Carretera Villa de Garcia km 3.6 <br>
+                            Santa Catarina, N.L, México
+                          </p>
+
+                          <!-- CONTACTS -->
+                          <h5>CONTACTO</h5>
+                          <a href="mailto:yishell@garant.mx" class="ui_button">CONTÁCTANOS POR CORREO</a>
+                          <table>
+                              <tr>
+                                <td>Oficina:</td>
+                                <td><a href="tel:1-408-555-5555">+52 (81)8335-0598</a></td>
+                              </tr>
+                              <tr>
+                                <td>Planta:</td>
+                                <td>+52 (81)8343-1618</td>
+                              </tr>
+                              <tr>
+                                <td>Cel:</td>
+                                <td>+52 811-013-3938</td>
+                              </tr>
+                          </table>
+
+                          <!-- SOCIAL NETWORKS -->
+                          <h5>CONNECT</h5>
+                          <ul class="social">
+                            <li><a href="https://www.facebook.com/pages/Dexen-Energy-SA-de-CV/171877406324342?fref=ts" class="icon-facebook-sign"></a></li>
+                          </ul>
+                        </div>
+
+                        <!-- MESSAGE FORM -->
+                        <div class="col-7-12">
+                          <h5>ENVÍA TU MENSAJE</h5>
+                          <p>También puedes contactarnos directamente en la siguiente forma.</p>
+                          <form id="contact_form" action="ajax_form.php" method="post">
+                            <input name="name" id="name" type="text" data-require="any" data-placeholder="Nombre"/>
+                            <input name="email" id="email" type="text" data-require="email" data-placeholder="E-mail"/>
+                            <textarea name="message" id="message" data-require="any" data-placeholder="Mensaje"></textarea>
+                            <input type="submit" name="submit" id="submit" value="Enviar" />
+                            <div id="result"></div>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER TOP -->
+            <div id="footer_top">
+              <ul class="container seamless grid">
+                <!-- SOCIAL -->
+                <li class="col-10-12 gap">
+                </li>
+                <!-- LOGO -->
+                <li class="col-2-12">
+                  <img src="img/logo-footer.jpg" width="75">
+                </li>
+              </ul>
+            </div>
+
+            <!-- FOOTER BOTTOM -->
+            <div id="footer_bottom">
+              <div class="container grid">
+                <ul class="row">
+                  <li class="col-1-3">
+                    &copy; Copyright 2015
+                  </li>
+                  <li class="col-2-3 right">
+                    <!-- NAVIGATION -->
+                    <ul class="navigation">
+                      <li><a href="portfolio4.html">Términos y Condiciones</a></li>
+                      <li><a href="about.html">Privacidad</a></li>
+                      <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+
+                    <!-- SOCIAL -->
+                    <ul class="follow">
+                      <li><a href="https://twitter.com/DexenEnergy"><i class="icon-twitter"></i></a></li>
+                      <li><a href="https://www.facebook.com/pages/Dexen-Energy-SA-de-CV/171877406324342?fref=ts"><i class="icon-facebook"></i></a></li>
+                      <li><a href="http://www.youtube.com/user/DexenEnergy"><i class="icon-youtube"></i></a></li>
+                      <li><a href="mailto:info@dexenenergy.com.mx"><i class="icon-envelope-alt"></i></a></li>
+                      <li><a href="https://plus.google.com/106179337831992292976" rel="publisher"><i class="icon-google-plus"></i></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </body>
+    </html>

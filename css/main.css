@@ -249,6 +249,7 @@ td {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 22px;
+  text-align: justify;
 }
 p + p {
   margin-top: 24px;
@@ -295,6 +296,16 @@ q {
 }
 b {
   font-weight: bold;
+}
+.headline {
+  position: absolute;
+  z-index: 999;
+  left: 50%;
+  margin-left: -250px;
+  top: 80px;
+  text-align: center;
+  background: rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 /*--------------------------------------------------------------------------------------------------
     LAYOUT
@@ -936,7 +947,7 @@ ul.items li:hover .description * {
   overflow: hidden;
   padding: 0;
   width: 100% !important;
-  max-height: 500px !important;
+  /*max-height: 500px !important;*/
 }
 #slider .ui_button {
   padding: 8px 60px;
@@ -1386,18 +1397,22 @@ button,
 --------------------------------------------------------------------------------------------------*/
 .ui_button[data-ui_button_type="translucent"] {
   border-color: #FAA547 !important;
-  color: #00dea5;
-  background-color: rgba(0, 196, 146, 0.1);
+  color: #FAA547;
+  background-color: transparent;
 }
 .ui_button[data-ui_button_type="translucent"]:hover {
-  border-color: #555555 !important;
-  color: #ffffff;
-  background-color: #555555;
+  border-color: #E0953F !important;
+  color: #E0953F;
 }
 .ui_button[data-ui_button_type="translucent"].click {
-  border-color: #3b3b3b !important;
-  color: #e6e6e6;
-  background-color: #3b3b3b;
+  border-color: #C78438 !important;
+  color: #C78438;
+}
+/*--------------------------------------------------------------------------------------------------
+    SMALL
+--------------------------------------------------------------------------------------------------*/
+.ui_button.small {
+  padding: 3px 14px 2px;
 }
 /*==================================================================================================
     SWITCH
@@ -2278,6 +2293,10 @@ a.ui_preloader > img {
 /*--------------------------------------------------------------------------------------------------
     CONTENT
 --------------------------------------------------------------------------------------------------*/
+.conectores .row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 #post .container {
   padding: 47px 0 76px;
 }

@@ -639,7 +639,7 @@
                 .on('init', function() {
                     var api = $('.fullwidthbanner', this).revolution({
                         delay: 9000,
-                        startheight: 500,
+                        startheight: 200,
                         startwidth: 940,
                         hideThumbs: 200,
                         thumbWidth: 100,

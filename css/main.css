@@ -243,6 +243,21 @@ h5.aside {
   padding-top: 3px;
   border-top: 5px solid rgb(250, 165, 71);
 }
+
+h6,
+h6 a {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: bold;
+}
+h6 {
+  margin-bottom: 10px;
+}
+h6.aside {
+  padding-top: 3px;
+  border-top: 5px solid rgb(250, 165, 71);
+}
+
 p,
 p a,
 td {

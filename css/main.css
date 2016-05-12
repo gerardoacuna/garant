@@ -713,7 +713,7 @@ ul.items li:hover .description * {
   padding-right: 20px;
 }
 #logo + #menu {
-  padding-left: 20px;
+  padding-left: 45px;
 }
 #logo + #menu.full > li {
   text-align: right;
@@ -756,7 +756,7 @@ ul.items li:hover .description * {
   padding: 14px 20px;
   font-size: 16px;
   line-height: 22px;
-  color: #595959;
+  color: #555555;
   z-index: 1;
   -webkit-transition: background 0.35s;
   -moz-transition: background 0.35s;
@@ -764,6 +764,31 @@ ul.items li:hover .description * {
   -ms-transition: background 0.35s;
   transition: background 0.35s;
 }
+
+#menu.full > li > ul > li > a,
+#menu.shrink > li.submenu > a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 14px 20px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #555;
+  z-index: 1;
+  -webkit-transition: background 0.35s;
+  -moz-transition: background 0.35s;
+  -o-transition: background 0.35s;
+  -ms-transition: background 0.35s;
+  transition: background 0.35s;
+}
+
+#menu.shrink > li.submenu > a.white {
+  color: #fff;
+}
+
 [data-idevice="true"] #menu.full > li > ul > li > a,
 [data-idevice="true"] #menu.shrink > li > a {
   -webkit-transition: none;
@@ -807,7 +832,7 @@ ul.items li:hover .description * {
 #menu.shrink > .submenu > ul {
   position: absolute;
   overflow: hidden;
-  margin-top: -5px;
+  margin-top: -10px;
   top: 100%;
   -webkit-border-radius: 0 5px 5px 5px;
   -moz-border-radius: 0 5px 5px 5px;
@@ -826,6 +851,7 @@ ul.items li:hover .description * {
   -o-transition: height 0.35s, opacity 0.35s;
   -ms-transition: height 0.35s, opacity 0.35s;
   transition: height 0.35s, opacity 0.35s;
+  right: 0px;
 }
 [data-idevice="true"] #menu.full > li > ul > .submenu > ul,
 [data-idevice="true"] #menu.shrink > .submenu > ul {
@@ -1318,9 +1344,9 @@ button,
   background-color: rgb(250, 165, 71);
 }
 .ui_button:hover {
-  border-color: #555555 !important;
+  border-color: #FAA547 !important;
   color: #ffffff;
-  background-color: #555555;
+  background-color: #FAA547;
 }
 .ui_button.click {
   border-color: #3b3b3b !important;

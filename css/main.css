@@ -826,6 +826,7 @@ ul.items li:hover .description * {
   -o-transition: height 0.35s, opacity 0.35s;
   -ms-transition: height 0.35s, opacity 0.35s;
   transition: height 0.35s, opacity 0.35s;
+  right : -50px;
 }
 [data-idevice="true"] #menu.full > li > ul > .submenu > ul,
 [data-idevice="true"] #menu.shrink > .submenu > ul {

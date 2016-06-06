@@ -312,7 +312,9 @@ q {
 b {
   font-weight: bold;
 }
-.headline {
+@media screen and (max-width: 500px) {
+    .headline {
+  visibility: hidden;
   padding: 10px;
   position: absolute;
   z-index: 999;
@@ -322,7 +324,28 @@ b {
   text-align: center;
   background: rgba(0,0,0,0.8);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
 }
+
+.headline {
+padding: 10px;
+position: absolute;
+z-index: 999;
+left: 50%;
+margin-left: -255px;
+top: 80px;
+text-align: center;
+background: rgba(0,0,0,0.8);
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 500px)
+{
+  {
+    display: none;
+  }
+}
+
 /*--------------------------------------------------------------------------------------------------
     LAYOUT
 --------------------------------------------------------------------------------------------------*/
@@ -396,6 +419,7 @@ b {
   font-size: 16px;
   /*line-height: 30px;*/
 }
+
 /*--------------------------------------------------------------------------------------------------
     SOCIAL ICONS
 --------------------------------------------------------------------------------------------------*/
@@ -660,7 +684,7 @@ ul.items .description {
 }
 ul.items .description h4 {
   font-family: lato;
-  font-size: 13px;
+  font-size: 17px;
 }
 ul.items .description * {
   color: #333333;
@@ -991,6 +1015,8 @@ ul.items li:hover .description * {
   width: 100% !important;
   /*max-height: 500px !important;*/
 }
+
+
 #slider .ui_button {
   padding: 8px 60px;
 }

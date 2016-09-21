@@ -34,7 +34,7 @@
 		<script src="js/libs/fancybox.js"></script>
 		<script src="js/main.js"></script>
   </head>
-  <body data-page="post" data-boxed="false">
+  <body data-page="home" data-boxed="false">
 
         <!-- LAYOUT -->
         <div id="layout">
@@ -66,7 +66,7 @@
                       </li>
                       <li><a href="proyectos.html">Proyectos</a></li>
                       <li><a href="about.html">Nosotros</a></li>
-                      <li><a href="contact.html">Contacto</a></li>
+                      <li><a href="mailto:yishell@garant.mx">Contacto</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -74,9 +74,23 @@
             </div>
           </div>
 
-          <!-- BANNER -->
-          <div class="banner ui_preloader">
-            <div class="background" style="background-image: url(img/vigueta-banner.jpg);"></div>
+          <!-- SLIDER -->
+          <div id="slider" class="banner">
+            <div class="fullwidthbanner-container">
+              <div class="fullwidthbanner">
+                <ul>
+                  <li data-transition="fade" data-slotamount="0">
+                    <img src="img/s-vigueta-3.jpg" alt="" data-fullwidthcentering="on"/>
+                  </li>
+                  <li data-transition="fade" data-slotamount="1">
+                    <img src="img/s-vigueta-2.jpg" alt="" data-fullwidthcentering="on"/>
+                  </li>
+                  <li data-transition="fade" data-slotamount="2">
+                    <img src="img/s-vigueta-1.jpg" alt="" data-fullwidthcentering="on"/>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
             <!-- POST -->

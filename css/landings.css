@@ -60,6 +60,7 @@ header {
 }
 
 .headline {
+  color: #FFF;
   text-align: center;
   padding-bottom: 40px;
 }
@@ -71,11 +72,15 @@ header {
 
 .hero {
   background-color: #112C4F;
-  color: #FFF;
-  height: 500px;
+  height: 450px;
   margin-bottom: 140px;
   padding-top: 60px;
   width: 100%;
+}
+
+.hero-info {
+  min-height: 350px;
+  color: #FFF;
 }
 
 .hero-form {
@@ -85,7 +90,8 @@ header {
   letter-spacing: 1px;
 }
 
-.hero-form input {
+.hero-form input,
+.hero-form textarea {
   box-sizing: border-box;
   background-color: #FFF;
   border: 1px solid #E0E0E0;

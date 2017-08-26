@@ -137,14 +137,13 @@
                           <form id="contact_form" action="https://formspree.io/yishell@garant.mx" method="post">
                             <h6>SELECCIONA EL PRODUCTO DE TU INTERES</h6>
                             <div class="ui_select" >
-                            <select>
-                              <option value="Conectores">Conectores</option>
-                              <option value="Habilitado">Habilitado</option>
-                              <option value="Toron">Toron de Presfuerzo</option>
-                              <option value="Vigueta">Vigueta y Bobedilla</option>
-                            </select>
-                          </div>
-                          <form id="contact_form" action="ajax_form.php" method="post">
+                              <select name="product">
+                                <option value="Conectores">Conectores</option>
+                                <option value="Habilitado">Habilitado</option>
+                                <option value="Toron">Toron de Presfuerzo</option>
+                                <option value="Vigueta">Vigueta y Bobedilla</option>
+                              </select>
+                            </div>
                             <h6>NOMBRE</h6>
                             <input name="name" id="name" type="text" data-require="any" />
                             <h6>CORREO</h6>
@@ -153,8 +152,10 @@
                             <input name="tel" id="tel" type="text" data-require="any" />
                             <h6>MENSAJE</h6>
                             <textarea name="message" id="message" data-require="any" ></textarea>
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <input type="hidden" name="_next" value="/gracias.html" />
+                            <input type="hidden" name="_subject" value="Mensaje desde sitio Garant">
                             <input type="submit" name="submit" id="submit" value="Enviar" />
-                            <div id="result"></div>
                           </form>
                         </div>
                     </div>
